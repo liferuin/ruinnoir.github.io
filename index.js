@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    var folder = "/images/";
+    var folder = "images/";
 
     $.ajax({
         url : folder,
