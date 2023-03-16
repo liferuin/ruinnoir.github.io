@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    var folder = "images/";
+    var folder = "https://ruinnoir.com/images/";
 
     $.ajax({
         url : folder,
