@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('/fonts/RobotoMono-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Ogg Roman';
+    src: url('/fonts/Ogg-Roman.otf');
+}
+
+@font-face {
+    font-family: 'Druk Wide';
+    src: url('/fonts/DrukWideHeavy.otf');
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+* {
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    font: 1.4rem 'Roboto Mono', sans-serif;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+span {
+    text-align: center;
+    margin: 0;
+    padding: 5%;
+}
+
+.no-select {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Opera and Firefox */
+}
+
+.logo {
+    z-index: 1000;
+    top: 5%;
+    right: 50%;
+    transform: translate(50%);
+    font: 5vw 'Druk Wide', sans-serif;
+    text-align: center;
+}
+
+.footer {
+    z-index: 1000;
+    bottom: 5%;
+    right: 50%;
+    transform: translate(50%);
+}
