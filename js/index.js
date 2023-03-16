@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    var folder = "https://github.com/liferuin/ruinnoir.github.io/tree/main/images/";
+    var folder = "tree/main/images/";
 
     $.ajax({
         url : folder,
