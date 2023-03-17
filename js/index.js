@@ -11,6 +11,7 @@ $(document).ready(function(){
         let vh = window.innerHeight * 0.01;
         document.documentElement.style.setProperty('--vh', `${vh}px`);
     })
+        
 
     var folder = "images/"
     $.ajax({
@@ -24,7 +25,7 @@ $(document).ready(function(){
                     var target = Math.floor(Math.random() * randomize.length -1) + 1;
                     var target2 = Math.floor(Math.random() * randomize.length -1) +1;
                     randomize.eq(target).before(randomize.eq(target2));
-    }
+                    }
                 } 
             });
         }

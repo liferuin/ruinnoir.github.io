@@ -76,3 +76,12 @@ span {
     right: 50%;
     transform: translate(50%);
 }
+
+.content {
+    z-index: 0;
+}
+
+.content img {
+    max-height: 90vh;
+    width: auto;
+}
