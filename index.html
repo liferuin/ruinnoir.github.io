@@ -35,7 +35,7 @@
         let contentString = '<div class="w-100 flex flex-column content">';
         
         for (let file of data) {
-          contentString += `<span><img src="${file.path}"></img></span>`;
+          contentString += `<span><img src="${file.path}" loading="lazy"></img></span>`;
         }
   
         contentString += '</div>';
