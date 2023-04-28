@@ -29,21 +29,25 @@
 </head>
 <body class="w-100 bg-black">
     <script>
+      // Create Directory Index using Github API
       (async () => {
         const response = await fetch('https://api.github.com/repos/liferuin/ruinnoir.github.io/contents/images');
         const data = await response.json();
+        // Create content div
         let contentString = '<div class="w-100 flex flex-column content">';
-        
+        // Create image container & lazy load
         for (let file of data) {
           contentString += `<span><img src="${file.path}" loading="lazy"></img></span>`;
         }
-  
+        
         contentString += '</div>';
+        // Create header and footer tags
         let headerString = '<header class="logo db fixed tc"><a href="#">RUIN NOIR</a></header>'
         let footerString = '<footer class="footer db fixed tc">RANDOM REFERENCES // <a href="https://instagram.com/ruinnoir">INSTAGRAM</a> // <a href="https://are.na/life-ruin/ruin-noir">ARE.NA</a></footer>'
-  
+        // Print into 'body' tag
         document.getElementsByTagName('body')[0].innerHTML = headerString + contentString + footerString;
-  
+        
+        // Randomize image order
         var randomize = $("span");
         for(var i = 0; i < randomize.length; i++){
         var target = Math.floor(Math.random() * randomize.length -1) + 1;
